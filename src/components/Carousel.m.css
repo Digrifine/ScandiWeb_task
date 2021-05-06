@@ -1,0 +1,174 @@
+
+h1,
+h2,
+h3,
+h4,
+h5{
+    margin: 0;
+}
+
+
+
+.slider__wrapper{
+    margin: 20px auto;
+    overflow: hidden;
+    width: 100vw;
+}
+
+
+.slider__track {
+    position: relative;
+    display: flex;
+    
+}
+
+.slider__item{
+    min-width: 100vw;
+    transition: all ease 1s;
+    max-height: 30%;
+ 
+}
+
+
+.slider__button_Prev {
+    width: 10%;
+    height: 100%;
+    position: absolute;
+    background: transparent;
+    border: none;
+    transition: ease 1s;
+    background: url(../assets/back.png) center no-repeat;
+}
+
+.slider__button_Prev:hover,
+.slider__button_Next:hover {
+    cursor: pointer;
+    filter:brightness(50%);
+
+}
+
+
+.slider__button_Next {
+    border: none;
+    width: 10%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    transition: ease 1s;
+    background: url(../assets/forward.png) center no-repeat;
+}
+
+.nav{
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+
+.track__selector {
+    padding: 0;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.track__selector__item {
+    list-style-type: none;
+}
+
+.radio__input {
+    height: 2vw;
+    width: 2vw;
+    opacity: 60%;
+
+}
+
+.radio__input:checked{
+    color: red;
+    opacity: 100%;
+
+}
+
+.radio__label {
+    margin-right: 1vw;
+    width: 4vw;
+    height: 0.2vh;
+    color: transparent;
+}
+
+.check {
+    width: 30px; height: 30px;
+	position: absolute;
+	border-radius: 50%;
+    background-color: lightgrey;
+
+}
+
+.slider__player {
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: black;
+}
+
+.video__player {
+    display: flex;
+    align-items: center;
+}
+
+
+.slider__card_item{
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+
+}
+
+.slider__card {
+    border-radius: 10px;
+    margin: 0 auto;
+    min-width: 40%;
+    max-width: 40%;
+    min-height: 80%;
+    background-color: white;
+    position: relative;
+    box-shadow: 2vw 2vw 2vw rgba(0, 0, 0, 0.5);
+}
+
+.card__header{
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    text-align: center;
+    background-color: gray;
+    border-radius: 10px 10px 0 0;
+    font-size: 2vw;
+}
+
+
+.card__body {
+    position: absolute;
+    top:10%;
+    width: 100%;
+    height: 80%;
+    font-size: 2vw;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+
+.card__footer {
+    position: absolute;
+    bottom: 0;
+    background: gray;
+    text-align: center;
+    height: 10%;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    font-size: 2vw;
+
+}
+
