@@ -1,6 +1,5 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const MediaQueryPlugin = require('media-query-plugin');
 
 let conf = {
 	entry: './src/main.js',
@@ -28,10 +27,6 @@ let conf = {
 							},
 						},
 					},
-					MediaQueryPlugin.loader,
-					{
-						loader: 'postcss-loader',
-					},
 				],
 			},
 			{
@@ -48,12 +43,6 @@ let conf = {
 	plugins: [
 		new MiniCssExtractPlugin({
 			filename: 'main.css',
-		}),
-		new MediaQueryPlugin({
-			include: ['example'],
-			queries: {
-				'print, screen and (min-width: 75em)': 'desktop',
-			},
 		}),
 	],
 };
