@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import styles from './Carousel.m.css';
-import { SlideData } from './Slide';
-import Video from '../assets/video.mp4';
-import icon from '../assets/c-reg.svg';
-import icon2 from '../assets/c-solid.svg';
+import React, { useEffect, useState } from "react";
+import styles from "./Carousel.m.css";
+import { SlideData } from "./Slide";
+import Video from "../assets/video.mp4";
+import icon from "../assets/c-reg.svg";
+import icon2 from "../assets/c-solid.svg";
 
 export default function user() {
 	const [sizeXY, setSizeXY] = useState(window.innerWidth);
@@ -17,18 +17,18 @@ export default function user() {
 	);
 
 	useEffect(() => {
-		document.getElementById('track').addEventListener('resize', updateWidth);
-		const width = document.getElementById('track').clientWidth;
+		document.getElementById("track").addEventListener("resize", updateWidth);
+		const width = document.getElementById("track").clientWidth;
 		setTrackWidth(width);
 		updateWidth();
 
-		() => window.removeEventListener('resize', updateWidth);
-		window.addEventListener('resize', updateWidth);
+		() => window.removeEventListener("resize", updateWidth);
+		window.addEventListener("resize", updateWidth);
 	}, [sizeXY]);
 
 	const updateWidth = () => {
 		setSizeXY(window.innerWidth);
-		const width = document.getElementById('track').clientWidth;
+		const width = document.getElementById("track").clientWidth;
 		setTrackWidth(width);
 	};
 
@@ -147,7 +147,7 @@ export default function user() {
 										src={slide.image}
 										alt="Ph"
 										className={styles.slider__img}
-										width={trackWidth + 'px'}
+										width={trackWidth + "px"}
 									/>
 								</div>
 							</>
@@ -166,7 +166,7 @@ export default function user() {
 					>
 						<div className={styles.slider__player}>
 							<video
-								style={{ margin: '0 auto' }}
+								style={{ margin: "0 auto" }}
 								width="59.3%"
 								controls="controls"
 								className={styles.video__player}
@@ -216,7 +216,7 @@ export default function user() {
 							src={SlideData[0].image}
 							alt="Ph"
 							className={styles.slider__img}
-							width={trackWidth + 'px'}
+							width={trackWidth + "px"}
 						/>
 					</div>
 					<button

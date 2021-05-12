@@ -1,8 +1,8 @@
-import IMG1 from '../assets/images/111.jpg';
-import IMG2 from '../assets/images/112.jpg';
-import IMG3 from '../assets/images/113.jpg';
-import IMG4 from '../assets/images/114.jpg';
-import IMG5 from '../assets/images/115.jpg';
+import IMG1 from "../assets/images/111.jpg";
+import IMG2 from "../assets/images/112.jpg";
+import IMG3 from "../assets/images/113.jpg";
+import IMG4 from "../assets/images/114.jpg";
+import IMG5 from "../assets/images/115.jpg";
 
 export const SlideData = [
 	{
